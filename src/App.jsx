@@ -1,40 +1,14 @@
 import "./index.css";
-import PropTypes from "prop-types";
-
-function Title() {
-    return (
-        <div className="title">
-            <h1>CV Builder</h1>
-        </div>
-    );
-}
-function InfoTitle(props) {
-    return <h2>{props.title}</h2>;
-}
-function InfoInput(props) {
-    return (
-        <input
-            className="InfoInput"
-            placeholder={props.placeholder}
-            type={props.type}
-            id="InfoInput"
-        />
-    );
-}
-InfoTitle.propTypes = {
-    title: PropTypes.string,
-};
-InfoInput.propTypes = {
-    placeholder: PropTypes.string,
-    type: PropTypes.string,
-};
+import { ImageAdd } from "./React/ImageAdd"; 
+import { InfoInput, InfoTitle,Title  } from "./React/Content";
 function GeneralInfo() {
     return (
         <>
             <InfoTitle title="General Information" />
             <div className="position">
-                <InfoInput type="text" placeholder="First Name" />
-                <InfoInput type="text" placeholder="Last Name" />
+                <InfoInput id="First-Name" type="text" placeholder="First Name" />
+                <InfoInput id="Last-Name" type="text" placeholder="Last Name" />
+                <ImageAdd />
                 <InfoInput type="text" placeholder="Profesional Title" />
                 <InfoInput type="text" placeholder="Description" />
                 <InfoInput type="text" placeholder="Phone Number" />
@@ -79,7 +53,7 @@ function Builder() {
             <div className="Builder">
                 <GeneralInfo />
                 <Education />
-                <WorkExperience/>
+                <WorkExperience />
             </div>
         </>
     );
