@@ -1,5 +1,5 @@
 import { ImageAdd } from "./ImageAdd.jsx";
-import { InfoInput, InfoTitle } from ".Content";
+import { InfoInput, InfoTitle } from "./Content";
 import { Button } from "./buttons.jsx";
 
 function GeneralInfo() {
