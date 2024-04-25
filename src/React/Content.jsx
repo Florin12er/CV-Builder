@@ -14,6 +14,8 @@ function InfoInput(props) {
     <input
       className="InfoInput"
       id={props.id}
+      value={props.value}
+      onChange={props.onChange}
       placeholder={props.placeholder}
       type={props.type}
     />
@@ -26,6 +28,8 @@ InfoInput.propTypes = {
   placeholder: PropTypes.string,
   type: PropTypes.string,
   id: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.string,
 };
 
 export { InfoInput, Title, InfoTitle };

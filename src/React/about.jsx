@@ -7,6 +7,7 @@ function GeneralInfo() {
     <>
       <InfoTitle title="General Information" />
       <div className="position">
+
         <InfoInput id="First-Name" type="text" placeholder="First Name" />
         <InfoInput id="Last-Name" type="text" placeholder="Last Name" />
         <ImageAdd />
@@ -56,4 +57,4 @@ function WorkExperience() {
     </>
   );
 }
-export { GeneralInfo, Education, WorkExperience}
+export { GeneralInfo, Education, WorkExperience };

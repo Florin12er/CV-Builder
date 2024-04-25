@@ -1,6 +1,6 @@
 import "./index.css";
 import { Title } from "./React/Content";
-import {GeneralInfo, Education, WorkExperience } from "./React/about.jsx"
+import { GeneralInfo, Education, WorkExperience } from "./React/about.jsx";
 function Builder() {
   return (
     <>
@@ -20,5 +20,4 @@ function App() {
     </>
   );
 }
-
 export default App;
