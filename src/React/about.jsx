@@ -1,21 +1,66 @@
 import { ImageAdd } from "./ImageAdd.jsx";
 import { InfoInput, InfoTitle } from "./Content";
 import { Button } from "./buttons.jsx";
+import { useState } from "react";
 
 function GeneralInfo() {
+  const [FirstName, setFirstName] = useState("");
+  const [LastName, setLastName] = useState("");
+  const [ProfesionalTitle, setProfesionalTitle] = useState("");
+  const [Description, setDescrition] = useState("");
+
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Adress, setAdress] = useState("");
   return (
     <>
       <InfoTitle title="General Information" />
       <div className="position">
-
-        <InfoInput id="First-Name" type="text" placeholder="First Name" />
-        <InfoInput id="Last-Name" type="text" placeholder="Last Name" />
+        <InfoInput
+          value={FirstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          id="First-Name"
+          type="text"
+          placeholder="First Name"
+        />
+        <InfoInput
+          value={LastName}
+          onChange={(e) => setLastName(e.target.value)}
+          id="Last-Name"
+          type="text"
+          placeholder="Last Name"
+        />
         <ImageAdd />
-        <InfoInput type="text" placeholder="Profesional Title" />
-        <InfoInput type="text" placeholder="Description" />
-        <InfoInput type="text" placeholder="Phone Number" />
-        <InfoInput type="email" placeholder="Email" />
-        <InfoInput type="text" placeholder="Adress" />
+        <InfoInput
+          value={ProfesionalTitle}
+          onChange={(e) => setProfesionalTitle(e.target.value)}
+          type="text"
+          placeholder="Profesional Title"
+        />
+        <InfoInput
+          value={Description}
+          onChange={(e) => setDescrition(e.target.value)}
+          type="text"
+          placeholder="Description"
+        />
+        <InfoInput
+          value={PhoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          type="text"
+          placeholder="Phone Number"
+        />
+        <InfoInput
+          value={Email}
+          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          placeholder="Email"
+        />
+        <InfoInput
+          value={Adress}
+          onChange={(e) => setAdress(e.target.value)}
+          type="text"
+          placeholder="Adress"
+        />
       </div>
     </>
   );
