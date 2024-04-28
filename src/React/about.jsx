@@ -62,6 +62,28 @@ function GeneralInfo() {
           placeholder="Adress"
         />
       </div>
+      <div className="About-cv">
+        <div className="name">
+          <h1 className="Name-CV">
+            {FirstName} {LastName}
+          </h1>
+          <p className="Profesional-Title-CV">{ProfesionalTitle}</p>
+        </div>
+        <div className="LeftPart">
+          <div className="Contacts">
+            <h2>Contacts</h2>
+            <p>{PhoneNumber}</p>
+            <p>{Email}</p>
+            <p>{Adress}</p>
+          </div>
+        </div>
+        <div className="RightPart">
+          <div className="Profile">
+            <h2>Profile</h2>
+            <p>{Description}</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
@@ -86,7 +108,7 @@ function Education() {
 function WorkExperience() {
   return (
     <>
-      <InfoTitle title="Work Experience" />
+      <InfoTitle className="Work" title="Work Experience" />
       <div className="position">
         <InfoInput type="text" placeholder="Job Title" />
         <InfoInput type="text" placeholder="Company Name" />

@@ -7,7 +7,7 @@ function Title() {
   );
 }
 function InfoTitle(props) {
-  return <h2>{props.title}</h2>;
+  return <h2 className={props.className}>{props.title}</h2>;
 }
 function InfoInput(props) {
   return (
@@ -23,6 +23,7 @@ function InfoInput(props) {
 }
 InfoTitle.propTypes = {
   title: PropTypes.string,
+  className: PropTypes.string,
 };
 InfoInput.propTypes = {
   placeholder: PropTypes.string,
