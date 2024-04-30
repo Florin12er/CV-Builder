@@ -30,7 +30,7 @@ InfoInput.propTypes = {
   type: PropTypes.string,
   id: PropTypes.string,
   value: PropTypes.string,
-  onChange: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 export { InfoInput, Title, InfoTitle };

@@ -42,6 +42,7 @@ input:focus {
 
     margin-left: 320px;
     position: absolute;
+    top: 230px;
     border: 1px solid black;
     width: 200px;
     height: 90px;
@@ -102,9 +103,6 @@ button {
     grid-column: 1;
 }
 
-.delete {
-    margin-right: 25px;
-}
 
 .Work {
     grid-column: 1;
@@ -126,6 +124,7 @@ button {
 
 .name {
     width: 550px;
+    height: 100px;
     position: absolute;
     top: 100px;
     background: #ececee;
