@@ -103,7 +103,6 @@ button {
     grid-column: 1;
 }
 
-
 .Work {
     grid-column: 1;
 }
@@ -133,14 +132,39 @@ button {
 .LeftPart {
     background: #373639;
     color: white;
+
     h2 {
         margin-top: 280px;
     }
 }
+
 .RightPart {
     color: black;
+
     h2 {
-         margin-top: 280px;
+        position: relative;
+        margin-top: 280px;
+        right: 70px;
     }
 }
 
+/*Education-Cv*/
+
+.Education-Cv {
+    color: white;
+    position: absolute;
+    left: 1260px;
+    top: 580px;
+}
+
+.Work-Cv {
+    position: absolute;
+    top: 580px;
+    left: 1500px;
+}
+
+
+.first-line {
+    margin-right: 20px;
+    width: 200px;
+}
