@@ -136,6 +136,7 @@ button {
     .Profesional-Title-CV {
         position: relative;
         left: 150px;
+        bottom: 20px;
     }
 }
 
@@ -156,6 +157,10 @@ button {
         position: relative;
         margin-top: 280px;
         right: 70px;
+    }
+    p {
+        position: relative;
+        right: 60px;
     }
 }
 
@@ -191,8 +196,5 @@ button {
     display: inline-block;
     top: 230px;
     left: 1250px;
-    background-size: "cover";
-    background-position: "center";
-    border-radius: "50%";
-    z-index: 1;
+      z-index: 1;
 }

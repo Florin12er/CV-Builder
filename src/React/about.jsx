@@ -63,7 +63,7 @@ function GeneralInfo() {
       <div className="About-cv">
         <div className="name">
           <h1 className="Name-CV">
-            {FirstName} {LastName}
+            {LastName}{FirstName} 
           </h1>
           <p className="Profesional-Title-CV">{ProfesionalTitle}</p>
         </div>
