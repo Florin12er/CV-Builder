@@ -127,9 +127,20 @@ button {
     position: absolute;
     top: 100px;
     background: #ececee;
+
+    .Name-CV {
+        position: relative;
+        left: 150px;
+    }
+
+    .Profesional-Title-CV {
+        position: relative;
+        left: 150px;
+    }
 }
 
 .LeftPart {
+    z-index: -1;
     background: #373639;
     color: white;
 
@@ -154,7 +165,7 @@ button {
     color: white;
     position: absolute;
     left: 1260px;
-    top: 580px;
+    top: 650px;
 }
 
 .Work-Cv {
@@ -163,8 +174,25 @@ button {
     left: 1500px;
 }
 
-
 .first-line {
     margin-right: 20px;
     width: 200px;
+}
+
+/*Circle*/
+
+.Circle {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #f8fafc;
+    border: 3px solid #908e92;
+    border-radius: 50%;
+    display: inline-block;
+    top: 230px;
+    left: 1250px;
+    background-size: "cover";
+    background-position: "center";
+    border-radius: "50%";
+    z-index: 1;
 }
